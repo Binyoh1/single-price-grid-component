@@ -1,0 +1,145 @@
+/* karla-regular - latin */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('./assets/fonts/karla-v21-latin-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./assets/fonts/karla-v21-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* karla-700 - latin */
+@font-face {
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('./assets/fonts/karla-v21-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./assets/fonts/karla-v21-latin-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 40em;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 0.75fr 1.25fr;
+    background-color: hsl(0, 0%, 100%);
+    line-height: 1.4;
+    border-radius: 0.75em;
+    overflow: hidden;
+}
+
+.join {
+    padding: 3.25em 2em;
+}
+
+h2 {
+    font-weight: 700;
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1.25em;
+}
+
+.subtitle {
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 1em;
+}
+
+.join p {
+    color: hsl(218, 22%, 67%);
+}
+
+.bottom-box {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(179, 62%, 43%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.sub {
+    padding: 1em 1.75em;
+}
+
+h3 {
+    padding-bottom: 1.5em;
+}
+
+.pricing {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+
+.price {
+    font-weight: 700;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    padding-right: 0.5em;
+}
+
+span {
+    color: hsl(0, 0%, 85%);
+}
+
+.sub p {
+    padding-bottom: 2.5em;
+    display: flex;
+    align-items: center;
+}
+
+.why {
+    background-color: hsl(179, 62%, 50%);
+    padding: 2em 1.75em;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 0.5em;
+    color: hsl(0, 0%, 100%);
+}
+
+li {
+    font-size: 0.875rem;
+    padding-bottom: 0.75em;
+}
+
+@media only screen and (min-width: 561px) and (max-width: 961px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .container {
+        padding: 3em 1.5em;
+    }
+
+    .bottom-box {
+        grid-template-columns: 100%;
+    }
+}
